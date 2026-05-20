@@ -6,7 +6,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#1a3a6b">
-<title>Rapporto di Lavoro — Francesconi Andrea</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<title>Rapporto di Lavoro — Eco Agency</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
 :root{--bg:#f2f1ed;--surface:#fff;--surface2:#f0efe9;--accent:#1a3a6b;--accent2:#2563eb;--text:#1a1a1a;--text2:#5a5a5a;--border:#d4d3cc;--green:#16a34a;--red:#dc2626;--radius:12px;--shadow:0 2px 14px rgba(0,0,0,0.07)}
@@ -105,7 +107,7 @@ canvas{display:block;width:100%;touch-action:none;cursor:crosshair}
   <img src="data:image/jpeg;base64,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" alt="Eco Agency logo">
   <div>
     <h1>Rapporto di Lavoro</h1>
-    <p id="header-sub">Francesconi Andrea</p>
+    <p id="header-sub">Eco Agency s.r.l.</p>
   </div>
   <div class="hright">
     <button class="icon-btn" onclick="showStorico()" title="Storico rapporti">
@@ -218,7 +220,7 @@ canvas{display:block;width:100%;touch-action:none;cursor:crosshair}
   <div class="card">
     <div class="card-title">📧 Invio via Outlook</div>
     <div class="field"><label>Email destinatario</label><input type="email" id="email-dest" placeholder="cliente@esempio.it"></div>
-    <div class="field"><label>Email in CC</label><input type="email" id="email-cc" placeholder="ufficio@francesconi-andrea.it"></div>
+    <div class="field"><label>Email in CC</label><input type="email" id="email-cc" placeholder="ufficio@eco-agency.it"></div>
     <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:10px 12px;font-size:12.5px;color:#92400e;margin-bottom:4px">
       ⚠ <strong>Passaggio 1:</strong> Scarica il PDF → <strong>Passaggio 2:</strong> Apri Outlook → allega il PDF dai Download
     </div>
@@ -443,8 +445,8 @@ function generaPDF(returnDoc){
   doc.setFont('helvetica','bold'); doc.setFontSize(15);
   doc.text('RAPPORTO DI LAVORO', mL+26, 13);
   doc.setFont('helvetica','normal'); doc.setFontSize(8.5);
-  doc.text('Francesconi Andrea', mL+26, 19);
-  doc.text('Francesconi Andrea', mL+26, 24.5);
+  doc.text('Eco Agency s.r.l. — San Giorgio di Piano (BO)', mL+26, 19);
+  doc.text('Cert. ISO 9001 · ISO 14001 · ISO 45001 | Albo Bonificatori Amianto', mL+26, 24.5);
 
   doc.setFont('helvetica','bold'); doc.setFontSize(10);
   doc.text('N° '+d.numRapporto, pW-mR, 13, {align:'right'});
@@ -545,7 +547,7 @@ function generaPDF(returnDoc){
   for(let i=1;i<=pages;i++){
     doc.setPage(i);
     doc.setFontSize(7); doc.setTextColor(180,180,180);
-    doc.text('Francesconi Andrea — Rapporto N° '+d.numRapporto+' — '+fmtData(d.data)+' — Pag. '+i+'/'+pages, 105, 293, {align:'center'});
+    doc.text('Eco Agency s.r.l. — Rapporto N° '+d.numRapporto+' — '+fmtData(d.data)+' — Pag. '+i+'/'+pages, 105, 293, {align:'center'});
   }
 
   if(returnDoc) return {doc, d};
@@ -579,8 +581,8 @@ function inviaOutlook(){
 (d.note?'\n\nNOTE:\n'+d.note:'')+'\n\n'+
 '━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n'+
 'Cordiali saluti,\n'+d.tecnicoNome+'\n'+(d.tecnicoRuolo||'')+'\n'+
-'Francesconi Andrea\n'+
-'Francesconi Andrea\n'+
+'Eco Agency s.r.l. — San Giorgio di Piano (BO)\n'+
+'Cert. ISO 9001 · ISO 14001 · ISO 45001\n'+
 'N.B. Ricordati di allegare il PDF prima di inviare.'
   );
   let mailto='mailto:'+dest+'?subject='+subj+'&body='+body;
@@ -592,7 +594,7 @@ function inviaOutlook(){
 // ════════════════════════════════════════════
 //  STORICO (localStorage)
 // ════════════════════════════════════════════
-const DB_KEY='francesconi_rapporti_v1';
+const DB_KEY='ecoagency_rapporti_v1';
 
 function getStorico(){
   try{ return JSON.parse(localStorage.getItem(DB_KEY)||'[]'); }catch(e){ return []; }
@@ -717,7 +719,7 @@ function esportaStorico(){
   const csv=[headers.map(h=>'"'+h+'"').join(','), ...rows.map(r=>r.join(','))].join('\n');
   const blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'});
   const url=URL.createObjectURL(blob);
-  const a=document.createElement('a'); a.href=url; a.download='storico_rapporti_francesconi.csv'; a.click();
+  const a=document.createElement('a'); a.href=url; a.download='storico_rapporti_eco.csv'; a.click();
   URL.revokeObjectURL(url);
   showStatus('✅ CSV esportato!');
 }
@@ -748,6 +750,13 @@ function nuovoRapporto(){
   const nextN=String(getStorico().length+1).padStart(3,'0');
   document.getElementById('num-rapporto').value=y+m+d+'-'+nextN;
   goTo(0);
+}
+</script>
+<script>
+if("serviceWorker" in navigator){
+  window.addEventListener("load",()=>{
+    navigator.serviceWorker.register("/sw.js").catch(()=>{});
+  });
 }
 </script>
 </body>
